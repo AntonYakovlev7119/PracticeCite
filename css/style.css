@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+section{
+    font-family: Verdana;
+ }
+
+.header{
+    display: block;
+    min-height: 10vh;  
+    background-color: black;
+    font-family: Verdana;
+    font-size: 14pt;
+}
+
+.header p{ 
+    padding: 15px 30px;
+    font-style: italic;
+    text-shadow: #60cfee 1px 1px 10px;
+    color: #f1f1f1;
+}
+.Logo a{
+    padding: 0;
+}
+.Logo img{
+    height: 100px;
+    width: 100px;
+}
+
+.Nav_Item{
+    padding: 20px;
+}
+
+.Nav_Menu li{
+    border-radius: 5%;
+}
+
+.Nav_Menu li, a{
+    display: inline-block;
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.Nav_Menu li:hover {
+    transition: all 0.8s ease ;
+    -webkit-transition: all 0,8s ease ;
+    background: #00ADE4;
+}
+
+.Nav_Menu{
+    width: 1300px;
+    height: 100px;
+}
+
+.Nav_Menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    font-size: 16pt;
+}
+
+.Nav{
+    display: flex;
+    background: rgb(240, 240, 240);
+    
+}
+
+.Heading__Begin, .Heading__Records, .Heading__Wartime, .Heading__AfterWar, .Heading__CompanyNow{
+    margin: 30px;
+    padding: 0px;
+    text-align: center;
+    text-shadow: #f6fdff 1px 1px 10px;
+
+}
+
+.Heading__Begin img, .Heading__Records img, .Heading__Wartime img, .Heading__AfterWar img, .Heading__CompanyNow img{
+    border-radius: 10%;
+}
+
+.Heading__Begin img{
+    height: 200px;
+    width: 260px;
+}
+
+.Heading__Records img{
+    height: 200px;
+    width: 250px;
+}
+
+.Heading__Wartime img{
+    height: 200px;
+    width: 300px;
+}
+
+.Heading__AfterWar img{
+    height: 200px;
+    width: 270px;
+}
+
+.Heading__CompanyNow img{
+    height: 200px;
+    width: 280px;
+}
+
+.Heading{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 20pt;
+    
+    background: linear-gradient(0deg, #32b4e7, rgb(20, 37, 197));
+}
+
+.Begining{
+    background: linear-gradient(0deg, #86ddff, #32b4e7);
+}
+
+.Records{
+    background: linear-gradient(0deg, rgb(236, 236, 236),#86ddff);
+}
+.Wartime{
+    background: linear-gradient(0deg, rgb(41, 41, 41),rgb(236, 236, 236));
+}
+
+.AfterWar{
+    background: linear-gradient(0deg, rgb(86, 86, 255),rgb(41, 41, 41));
+    text-shadow: #000000 0px 0px 12px;
+    color: rgb(217, 217, 233);
+}
+
+.CompanyNow{
+    background: linear-gradient(0deg, rgb(78, 208, 248),rgb(88, 88, 255));
+}
+
+.Begining, .Records, .Wartime, .AfterWar, .CompanyNow{
+    padding: 25px 50px;
+}
+.Begining p, h2, .Records p, h2, .Wartime p, h2, .AfterWar p, h2, .CompanyNow p, h2{
+    padding: 10px 25px;
+}
+
+.Footer__Part{
+    display: block;
+    text-align: center;
+    font-style: italic;
+    padding: 30px;
+    background: rgb(240, 240, 240);
+}
+
+main{
+    font-size: 14pt;
+    text-shadow: #ffffff 1px 1px 10px;
+}
+@media(max-width: 771px){
+    .Heading__Begin img{
+        height: 150px;
+        width: 220px;
+    }
+    .Heading__Records img{
+        height: 140px;
+        width: 210px;
+    }
+    .Heading__Wartime img{
+        height: 150px;
+        width: 230px;
+    }
+    .Heading__AfterWar img{
+        height: 170px;
+        width: 230px;
+    }
+    .Heading__CompanyNow img{
+        height: 150px;
+        width: 240px;
+    }
+
+}
+
+@media(max-width: 540px){
+    main{
+        font-size: 12pt;
+    }
+
+    .Begining, .Records, .Wartime, .AfterWar, .CompanyNow{
+        padding: 25px 20px;
+    }
+    .Begining p, h2, .Records p, h2, .Wartime p, h2, .AfterWar p, h2, .CompanyNow p, h2{
+        padding: 3px 20px;
+    }
+    .Nav_Menu{
+        font-size: 12pt;
+    }
+    .header{
+        font-size: 12pt;
+    }
+}
+
+@media(max-width: 410px){
+    .header, .Nav_Menu, main{
+        font-size: 10pt;
+    }
+   
+}
